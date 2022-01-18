@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { PageInfoService } from 'src/app/services/page-info.service';
+import { InfoPagina } from '../../../interfaces/data-info.interface';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  constructor(public _service: PageInfoService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
