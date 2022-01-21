@@ -23,6 +23,7 @@ export class ProductosService {
           this.productos = resp;
           this.loading = false;
         });
+      resolve(true);
     });
   }
 
