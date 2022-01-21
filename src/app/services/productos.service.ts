@@ -44,7 +44,6 @@ export class ProductosService {
   }
 
   private filterProduct(valor: string) {
-    console.log(this.productos);
     this.filter = [];
     valor = valor.toLowerCase();
 
